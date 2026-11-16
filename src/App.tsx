@@ -1,7 +1,7 @@
 import {useMemo,useState} from 'react';
 import {AnimatePresence,motion} from 'framer-motion';
 import {NavLink,Route,Routes,useLocation} from 'react-router-dom';
-import ReactFlow,{Background,Controls,MiniMap,type Node,type Edge} from '@xyflow/react';
+import {ReactFlow,Background,Controls,MiniMap,type Node,type Edge} from '@xyflow/react';
 import {ArrowRight,BookOpen,Bookmark,Check,ChevronRight,GitBranch,Menu,Search,ShieldAlert,Sparkles,X} from 'lucide-react';
 import {entries,chronology,reading,clues,type Entry} from './data';
 const key='doom-recap-progress';
