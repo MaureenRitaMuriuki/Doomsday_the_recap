@@ -88,3 +88,182 @@ body{background:radial-gradient(ellipse at 78% 7%,#9b172d35,transparent 36%),rad
 .warning{border-color:#85523d}
 footer>b{font-family:Impact,sans-serif;letter-spacing:.06em}
 @media(max-width:760px){.hero{min-height:0}.hero-art:before{font-size:110px}.sigil{height:165px}.hero-emblem{width:98px;height:98px}.hero h1{font-size:clamp(57px,15vw,90px)}}
+
+
+/* COMIC BOOK REBOOT */
+:root{--ink:#09090b;--paper:#f6e8c9;--red:#ed1c24;--gold:#f6c453;--blue:#164b85;--purple:#54246f}
+body{background:#0b0b0d;color:#f7f0e3;font-family:Impact,'Arial Narrow',system-ui,sans-serif}
+.comic-shell{min-height:100vh;background:radial-gradient(circle at 50% 0,#28212a 0,#0b0b0d 42%);overflow:hidden}
+.comic-ribbon{height:28px;display:flex;justify-content:space-between;align-items:center;padding:0 4vw;background:var(--red);color:white;font:900 10px/1 Arial,sans-serif;letter-spacing:.18em}
+.comic-header{min-height:76px;padding:12px 4vw;display:flex;align-items:center;justify-content:space-between;gap:24px;background:#09090bee;border-bottom:3px solid var(--red);position:sticky;top:0;z-index:20}
+.marvel-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:white}
+.marvel-brand b,.marvel-logo b{background:#ed1c24;color:#fff;padding:4px 9px;font:900 27px/.95 Impact,sans-serif;letter-spacing:-.04em}
+.marvel-brand span{font:900 14px/1 Arial,sans-serif;letter-spacing:.12em}
+.comic-nav{display:flex;gap:clamp(10px,2vw,28px);align-items:center}
+.comic-nav a{color:#f4e9d4;text-decoration:none;font:900 11px/1 Arial,sans-serif;letter-spacing:.08em}
+.comic-nav a:hover,.comic-nav a.active{color:var(--gold)}
+.mobile{display:none}
+main{min-height:65vh}
+.marvel-intro{position:relative;min-height:370px;padding:28px 4vw 24px;background:#131318;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;border-bottom:4px solid var(--gold)}
+.intro-panels{position:absolute;inset:0;display:grid;grid-template-columns:repeat(5,1fr);opacity:.65;transform:skewY(-5deg) scale(1.12)}
+.intro-panel{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:16px;border:3px solid #0a0a0c;box-shadow:inset 0 0 70px #0009;color:#fff;text-align:center;padding:8px;transform:skewY(5deg)}
+.intro-panel span{font:900 10px Arial,sans-serif;letter-spacing:.1em}
+.intro-panel b{font:900 clamp(20px,4vw,48px)/.9 Impact,sans-serif;text-shadow:3px 3px #000}
+.panel-red{background:repeating-linear-gradient(135deg,#9e101b,#9e101b 12px,#d31e29 12px,#d31e29 24px)}
+.panel-blue{background:linear-gradient(135deg,#0a2342,#1763a4)}
+.panel-gold{background:linear-gradient(135deg,#674014,#d69c37)}
+.panel-green{background:linear-gradient(135deg,#102f31,#2b7770)}
+.panel-purple{background:linear-gradient(135deg,#2b153f,#8540a0)}
+.marvel-logo{position:relative;z-index:1;display:flex;align-items:center;gap:12px;filter:drop-shadow(0 8px 10px #000)}
+.marvel-logo b{font-size:clamp(52px,10vw,105px);padding:8px 18px}
+.marvel-logo span{font:900 clamp(20px,4vw,44px)/1 Arial,sans-serif;letter-spacing:.05em}
+.intro-caption{position:relative;z-index:1;background:#08080add;padding:10px 18px;color:#fff;font:800 12px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.comic-hero{position:relative;isolation:isolate;min-height:480px;padding:78px 9vw 65px;background:radial-gradient(ellipse at 82% 44%,#a21c2b88,transparent 33%),linear-gradient(112deg,#131318 0%,#1b1720 54%,#47151d 100%);border-bottom:5px solid #d7a93e;overflow:hidden}
+.comic-hero:after{content:'DOOM';position:absolute;z-index:-1;right:-3vw;top:8%;font:900 clamp(150px,29vw,420px)/.8 Impact,sans-serif;color:#ffffff08;transform:rotate(-8deg)}
+.hero-stamp{position:absolute;right:10%;top:42px;border:2px solid var(--gold);color:var(--gold);padding:9px 13px;transform:rotate(8deg);font:900 12px Arial,sans-serif;letter-spacing:.15em}
+.hero-stamp span{font-size:20px}
+.hero-kicker{color:var(--gold);font:900 11px Arial,sans-serif;letter-spacing:.18em}
+.comic-hero h1{font:900 clamp(66px,12vw,148px)/.78 Impact,'Arial Narrow',sans-serif;letter-spacing:-.035em;margin:24px 0;text-shadow:6px 6px 0 #000}
+.comic-hero h1 em{font-style:normal;color:var(--red);-webkit-text-stroke:1px #ffb7a5;text-shadow:6px 6px 0 #4b0710}
+.comic-hero>p{max-width:560px;color:#f5e9d8;font:500 17px/1.55 Arial,sans-serif}
+.hero-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.comic-button{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;background:var(--red);border:2px solid #ff6b64;color:#fff;text-decoration:none;font:900 12px Arial,sans-serif;letter-spacing:.1em;box-shadow:5px 5px 0 #050505}
+.comic-button:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 #050505}
+.comic-button.ghost{background:#121217;border-color:var(--gold)}
+.quote-bubble{position:absolute;right:13%;bottom:45px;max-width:230px;padding:18px 22px;background:var(--paper);color:#141414;border:3px solid #111;border-radius:48% 48% 48% 8%;transform:rotate(5deg);font:900 20px/1.1 Georgia,serif;box-shadow:5px 5px 0 #000}
+.quote-bubble small{display:block;margin-top:8px;text-align:right;font:900 10px Arial,sans-serif}
+.hero-side-note{position:absolute;right:5%;top:50%;color:var(--gold);font:900 23px Impact,sans-serif;transform:rotate(90deg);letter-spacing:.12em}
+.hero-side-note span{color:var(--red)}
+.comic-section{padding:58px 5vw}
+.section-banner{display:flex;align-items:end;justify-content:space-between;gap:20px;border-bottom:4px solid var(--red);padding-bottom:12px;margin-bottom:24px}
+.section-banner span{color:var(--gold);font:900 10px Arial,sans-serif;letter-spacing:.16em}
+.section-banner b{font:900 clamp(24px,4vw,42px)/.9 Impact,sans-serif;text-transform:uppercase}
+.comic-tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.comic-tile{min-height:225px;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;gap:12px;border:3px solid #080808;box-shadow:6px 6px 0 #000;text-decoration:none;color:white;position:relative;overflow:hidden;transition:.2s}
+.comic-tile:before{content:'✦';position:absolute;right:12px;top:4px;font-size:100px;color:#ffffff24}
+.comic-tile:hover{transform:translateY(-6px) rotate(-1deg)}
+.comic-tile small{font:900 10px Arial,sans-serif;letter-spacing:.13em}
+.comic-tile>b{font:900 clamp(23px,2.6vw,36px)/.9 Impact,sans-serif;text-transform:uppercase}
+.comic-tile p{font:500 13px/1.4 Arial,sans-serif;margin:0}
+.comic-tile>span{font:900 10px Arial,sans-serif;letter-spacing:.08em;color:#fff}
+.tile-red{background:repeating-linear-gradient(135deg,#9b1020,#9b1020 14px,#be1728 14px,#be1728 28px)}
+.tile-blue{background:linear-gradient(145deg,#0d2c54,#1762a6)}
+.tile-gold{background:linear-gradient(145deg,#6c3e11,#bc8427)}
+.tile-purple{background:linear-gradient(145deg,#301441,#70388b)}
+.quote-strip{display:flex;justify-content:space-around;gap:16px;flex-wrap:wrap;padding:20px 5vw;background:#f2e6cc;color:#171717;border-block:4px solid #111;font:italic 900 17px Georgia,serif}
+.phase-mini-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.phase-mini{min-height:130px;padding:15px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;text-decoration:none;border:2px solid #111;box-shadow:4px 4px 0 #000}
+.phase-mini small{font:900 10px Arial,sans-serif;letter-spacing:.12em}
+.phase-mini b{font:900 17px/1 Impact,sans-serif}
+.phase-mini span{font:900 11px Arial,sans-serif;color:var(--gold)}
+.phase-1{background:linear-gradient(145deg,#75331a,#d28a39)}.phase-2{background:linear-gradient(145deg,#7b1c22,#d52d31)}.phase-3{background:linear-gradient(145deg,#172f4b,#25649a)}.phase-4{background:linear-gradient(145deg,#3d245d,#8655a5)}.phase-5{background:linear-gradient(145deg,#143d42,#287d78)}.phase-6{background:linear-gradient(145deg,#211d20,#8f1725)}
+.all-phases{display:flex;justify-content:center;align-items:center;gap:10px;margin:22px auto 0;color:var(--gold);font:900 12px Arial,sans-serif;text-decoration:none;letter-spacing:.12em}
+.final-callout{text-align:center;padding:50px 20px;background:linear-gradient(90deg,#17151a,#38121b,#17151a);border-top:4px solid var(--gold)}
+.final-callout h2{font:900 clamp(36px,7vw,72px)/.9 Impact,sans-serif;color:var(--gold);margin:0 0 14px}
+.final-callout p{font:15px Arial,sans-serif;color:#f4e8d8}
+.comic-page{max-width:1250px;margin:0 auto;padding:54px 5vw 80px}
+.comic-head{max-width:800px;margin-bottom:32px}
+.comic-head small{color:var(--gold);font:900 11px Arial,sans-serif;letter-spacing:.18em}
+.comic-head h1{font:900 clamp(44px,8vw,86px)/.88 Impact,sans-serif;margin:12px 0 16px;text-transform:uppercase;text-shadow:4px 4px 0 #8c1420}
+.comic-head p{max-width:700px;color:#d8d1c7;font:16px/1.55 Arial,sans-serif}
+.saga-tabs{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:14px 18px;background:#f4e8d0;color:#111;margin-bottom:24px;border:3px solid #111}
+.saga-tabs span{font:900 13px Arial,sans-serif}.saga-tabs i{font:900 10px Arial,sans-serif;color:#9c1724;font-style:normal}
+.phase-stack{display:grid;gap:14px}
+.phase-card{border:3px solid #080808;box-shadow:5px 5px 0 #000;background:#17171b;overflow:hidden}
+.phase-title{width:100%;display:flex;align-items:center;gap:20px;padding:18px 22px;text-align:left;color:white;background:transparent;border:0;cursor:pointer}
+.phase-number{font:900 54px/.9 Impact,sans-serif;color:var(--gold);min-width:50px}
+.phase-title>span:nth-child(2){display:flex;flex-direction:column;gap:6px;flex:1}
+.phase-title small{font:900 10px Arial,sans-serif;letter-spacing:.12em;color:#f2c56a}
+.phase-title b{font:900 30px/.9 Impact,sans-serif}
+.phase-title em{font:italic 13px Georgia,serif;color:#e7d7bd}
+.phase-projects{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:0 18px 20px}
+.project-card{min-height:68px;padding:12px;background:#f2e8d5;color:#151515;border:2px solid #080808;display:flex;flex-direction:column;gap:5px}
+.project-card span{font:900 10px Arial,sans-serif;color:#a51a26}
+.project-card b{font:900 15px/1.05 Arial,sans-serif}
+.project-card i{font:900 9px Arial,sans-serif;color:#635b50;font-style:normal;letter-spacing:.1em}
+.editor-note{color:#bcb4a8;font:12px/1.5 Arial,sans-serif;margin-top:24px}
+.roster-tools{display:flex;flex-direction:column;gap:16px;margin-bottom:22px}
+.roster-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.roster-tabs button{padding:10px 14px;background:#17171c;border:1px solid #6b5b50;color:#e8ddcc;font:900 10px Arial,sans-serif;letter-spacing:.08em;cursor:pointer}
+.roster-tabs button.active,.roster-tabs button:hover{background:var(--red);border-color:#ff7770;color:white}
+.roster-search{display:flex;align-items:center;gap:10px;max-width:420px;padding:11px 13px;background:#f4e8d0;color:#111;border:2px solid #111}
+.roster-search input{background:transparent;border:0;outline:0;color:#111;width:100%;font:14px Arial,sans-serif}
+.roster-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.roster-card{position:relative;display:grid;grid-template-columns:112px 1fr;min-height:180px;text-align:left;padding:0;background:#f3e7d1;color:#171717;border:3px solid #050505;box-shadow:5px 5px 0 #000;cursor:pointer;overflow:hidden}
+.roster-card:hover{transform:translateY(-4px);box-shadow:7px 8px 0 #000}
+.roster-art{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:linear-gradient(145deg,#151d2b,#73212b);border-right:3px solid #111;padding:10px}
+.roster-art>span:last-child{font:900 8px Arial,sans-serif;color:#f5d68b;text-align:center}
+.hero-emblem{display:grid;place-items:center;width:72px;height:72px;border:3px solid #f3c95e;border-radius:50%;background:radial-gradient(circle,#657080,#101116);color:white;font:900 42px/1 Impact,sans-serif;text-shadow:2px 2px #000;box-shadow:0 0 0 5px #ffffff18,0 6px 12px #0008}
+.emblem-spider{background:radial-gradient(circle,#1d4674,#0b1525);color:#f7f1e5;border-color:#e43a43}.emblem-ironman,.emblem-ironheart,.emblem-ironheartseries{background:radial-gradient(circle,#b43a24,#501016);color:#ffdb78}.emblem-captain{background:radial-gradient(circle,#316bb3,#11233c);color:white}.emblem-thor,.emblem-odin,.emblem-hela,.emblem-surtur,.emblem-asgard{background:radial-gradient(circle,#486985,#111b2a);color:#f3d68b}.emblem-wanda,.emblem-agatha{background:radial-gradient(circle,#7b1d42,#220c1c);color:#ffb4c2}.emblem-doom{background:radial-gradient(circle,#66705e,#151a16);color:#d5d6c9}.emblem-ultron{background:radial-gradient(circle,#a6b5b8,#242c32);color:#cf282f}.emblem-fantastic{background:radial-gradient(circle,#276bb0,#10284a);color:#fff}.emblem-thanos,.emblem-gorr{background:radial-gradient(circle,#66508a,#20152e);color:#d5a6f2}
+.roster-copy{display:flex;flex-direction:column;gap:7px;padding:14px 14px 12px 16px}
+.roster-copy small{font:900 9px Arial,sans-serif;color:#9b1724;letter-spacing:.12em}
+.roster-copy>b{font:900 22px/.95 Impact,sans-serif;text-transform:uppercase}
+.roster-copy p{font:12px/1.35 Arial,sans-serif;color:#423e39;margin:0}
+.roster-copy strong{margin-top:auto;display:flex;align-items:center;gap:5px;font:900 9px Arial,sans-serif;color:#a51b27;letter-spacing:.08em}
+.save-mark{position:absolute;right:8px;top:7px;font-size:17px;color:#b21c2a}
+.comic-overlay{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:20px;background:#000c}
+.character-popup{position:relative;width:min(580px,100%);max-height:90vh;overflow:auto;padding:30px;background:#f4e8d2;color:#181614;border:4px solid #090909;box-shadow:10px 10px 0 #9e1724}
+.popup-close{position:absolute;right:12px;top:12px;background:transparent;border:0;color:#111;cursor:pointer}
+.popup-art{height:135px;display:grid;place-items:center;margin:-30px -30px 22px;background:radial-gradient(circle,#7d1c28,#10151e)}
+.popup-art .hero-emblem{width:100px;height:100px;font-size:60px}
+.character-popup>small{font:900 10px Arial,sans-serif;color:#a31a27;letter-spacing:.1em}
+.character-popup h2{font:900 48px/.9 Impact,sans-serif;margin:9px 0 14px}
+.character-popup p{font:14px/1.5 Arial,sans-serif;color:#38332d}
+.character-popup .popup-lead{font-weight:700;font-size:16px}
+.canon-stamp{display:inline-block;margin:10px 0 18px;padding:7px 10px;background:#17171b;color:#f5d18b;font:900 10px Arial,sans-serif;letter-spacing:.1em}
+.connection-feature{display:grid;grid-template-columns:1fr 1.1fr;gap:18px}
+.connection-pick,.connection-story{padding:22px;background:#17171c;border:3px solid #050505;box-shadow:5px 5px 0 #000}
+.connection-pick>small,.story-label,.thread-title{color:var(--gold);font:900 10px Arial,sans-serif;letter-spacing:.14em}
+.connection-roster{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:16px}
+.connection-roster button{display:flex;align-items:center;gap:10px;padding:9px;background:#f2e7d3;color:#171717;border:2px solid #080808;text-align:left;cursor:pointer;font:900 12px Arial,sans-serif}
+.connection-roster button.picked{background:#a41c29;color:white;border-color:#f3c45b}
+.connection-roster .hero-emblem{width:38px;height:38px;font-size:22px;border-width:1px}
+.connection-story{background:#f2e7d3;color:#161616}
+.story-label{color:#a31a27}
+.story-hero{display:flex;align-items:center;gap:15px;margin:15px 0}
+.story-hero .hero-emblem{width:78px;height:78px}
+.story-hero small{font:900 9px Arial,sans-serif;color:#9d1824}
+.story-hero h2{font:900 34px/.95 Impact,sans-serif;margin:5px 0}
+.connection-story>p{font:13px/1.5 Arial,sans-serif;color:#39332d}
+.thread-title{color:#a31a27;margin:20px 0 10px}
+.thread-list{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.thread-list button{display:flex;align-items:center;gap:8px;padding:8px;background:#fff9ed;border:1px solid #bdb19d;color:#171717;text-align:left;cursor:pointer}
+.thread-list button span .hero-emblem{width:34px;height:34px;font-size:19px}
+.thread-list button b{font:900 11px Arial,sans-serif;flex:1}
+.canon-note{display:flex;gap:10px;align-items:center;margin-top:20px;padding:14px;background:#f2e7d3;color:#342c25;font:12px/1.4 Arial,sans-serif;border-left:5px solid var(--gold)}
+.comic-recommend{padding:25px;background:linear-gradient(110deg,#8c1525,#1d2435);border:3px solid #050505;box-shadow:6px 6px 0 #000;margin-bottom:22px}
+.comic-recommend>span{font:900 10px Arial,sans-serif;color:var(--gold);letter-spacing:.16em}
+.comic-recommend h2{font:900 clamp(25px,4vw,40px)/.95 Impact,sans-serif;margin:10px 0}
+.comic-recommend p{font:14px Arial,sans-serif;color:#f3e6d4}
+.archive-tabs{margin:22px 0}
+.comic-books{display:grid;gap:14px}
+.book-card{display:grid;grid-template-columns:155px 1fr;gap:18px;padding:14px;background:#f1e5cf;color:#171717;border:3px solid #050505;box-shadow:5px 5px 0 #000}
+.book-cover{min-height:180px;padding:15px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;background:linear-gradient(145deg,#0e2444,#8d1b2a);border:2px solid #111}
+.book-1 .book-cover{background:linear-gradient(145deg,#8e641e,#25203c)}.book-2 .book-cover{background:linear-gradient(145deg,#381b50,#b31d2a)}.book-3 .book-cover{background:linear-gradient(145deg,#222,#5d5d50)}
+.book-cover span{font:900 9px Arial,sans-serif;letter-spacing:.12em}
+.book-cover b{font:900 26px/.9 Impact,sans-serif}
+.book-cover small{font:10px Arial,sans-serif}
+.book-card>div:last-child{align-self:center}
+.book-card>div:last-child>small{font:900 9px Arial,sans-serif;color:#a21b28;letter-spacing:.1em}
+.book-card h3{font:900 28px/.95 Impact,sans-serif;margin:7px 0}
+.book-card>div:last-child>b{font:900 11px Arial,sans-serif}
+.book-card p{font:13px/1.45 Arial,sans-serif;color:#403a33}
+.easter-list{display:grid;gap:10px}
+.easter-list article{background:#f1e6d2;color:#171717;border:3px solid #050505;box-shadow:4px 4px 0 #000;overflow:hidden}
+.easter-list article>button{width:100%;display:flex;align-items:center;gap:18px;padding:18px;background:transparent;border:0;color:#171717;text-align:left;cursor:pointer}
+.easter-number{font:900 30px Impact,sans-serif;color:#b11c2a}
+.easter-list article>button span:nth-child(2){display:flex;flex-direction:column;gap:5px;flex:1}
+.easter-list article>button small{font:900 9px Arial,sans-serif;color:#a31a27;letter-spacing:.1em}
+.easter-list article>button b{font:900 23px Impact,sans-serif}
+.easter-detail{padding:0 24px 18px 75px}
+.easter-detail>b{font:900 9px Arial,sans-serif;color:#a51b27;letter-spacing:.12em}
+.easter-detail p{font:13px/1.5 Arial,sans-serif;color:#38332d}
+.easter-detail span{display:inline-block;background:#18181c;color:#f4d48c;padding:6px 9px;font:900 9px Arial,sans-serif}
+.comic-footer{padding:36px 5vw;text-align:center;background:#050506;border-top:4px solid var(--red)}
+.comic-footer>b{font:900 32px Impact,sans-serif;color:white}
+.comic-footer>b span{color:var(--red)}
+.comic-footer p{font:13px Arial,sans-serif;color:#ddd3c4}
+.comic-footer small{display:block;max-width:850px;margin:15px auto 0;color:#888;font:10px/1.5 Arial,sans-serif}
+@media(max-width:900px){.comic-tiles{grid-template-columns:repeat(2,1fr)}.phase-mini-grid{grid-template-columns:repeat(3,1fr)}.roster-grid{grid-template-columns:repeat(2,1fr)}.comic-nav{gap:12px}.comic-nav a{font-size:9px}}
+@media(max-width:680px){.comic-ribbon span:nth-child(2){display:none}.comic-header{min-height:66px}.mobile{display:block;background:transparent;border:0;color:#fff}.comic-nav{display:none;position:absolute;top:100%;left:0;right:0;padding:18px;background:#09090b;flex-direction:column;align-items:flex-start;border-bottom:3px solid var(--red)}.comic-nav.open{display:flex}.comic-nav a{font-size:12px;padding:7px}.marvel-intro{min-height:240px}.intro-panel span{font-size:7px}.intro-panel b{font-size:17px}.marvel-logo b{font-size:54px}.marvel-logo span{font-size:20px}.comic-hero{min-height:530px;padding:70px 7vw 55px}.comic-hero h1{font-size:clamp(62px,17vw,100px)}.hero-stamp{right:6%;top:22px;font-size:9px}.quote-bubble{right:7%;bottom:18px;font-size:15px}.hero-side-note{display:none}.comic-tiles{grid-template-columns:1fr 1fr}.comic-tile{min-height:195px;padding:15px}.comic-tile>b{font-size:25px}.comic-tile p{font-size:11px}.phase-mini-grid{grid-template-columns:repeat(2,1fr)}.phase-projects{grid-template-columns:1fr 1fr}.phase-title{padding:15px 12px;gap:12px}.phase-number{font-size:42px;min-width:38px}.phase-title b{font-size:24px}.phase-title em{font-size:11px}.roster-grid{grid-template-columns:1fr}.roster-card{grid-template-columns:105px 1fr;min-height:155px}.roster-art .hero-emblem{width:64px;height:64px;font-size:34px}.roster-copy>b{font-size:20px}.connection-feature{grid-template-columns:1fr}.connection-roster{grid-template-columns:repeat(2,1fr)}.book-card{grid-template-columns:105px 1fr;gap:12px;padding:10px}.book-cover{min-height:155px;padding:10px}.book-cover b{font-size:20px}.book-card h3{font-size:23px}.easter-list article>button{gap:10px;padding:13px}.easter-list article>button b{font-size:19px}.easter-detail{padding:0 16px 16px 55px}.section-banner{align-items:flex-start;flex-direction:column;gap:8px}.saga-tabs{gap:8px}.saga-tabs span{font-size:10px}}
+@media(max-width:390px){.comic-tiles{grid-template-columns:1fr}.phase-projects{grid-template-columns:1fr}.comic-hero h1{font-size:58px}.intro-caption{font-size:9px;text-align:center}}
