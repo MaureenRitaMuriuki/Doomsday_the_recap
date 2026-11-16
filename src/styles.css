@@ -10,3 +10,81 @@ footer{border-top:1px solid var(--line);padding:42px 5vw 22px;margin-top:45px;co
 @media(max-width:1050px){.nav{gap:10px}.nav a{font-size:8px}.graph{grid-template-columns:1fr 250px}.dossiers{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.mid{display:none}.header{height:66px}.mobile{display:block;order:3}.nav{display:none;position:absolute;top:65px;left:0;right:0;padding:18px 5vw 22px;background:#101211;border-bottom:1px solid #3b3934;flex-direction:column;align-items:flex-start;gap:18px}.nav.open{display:flex}.nav a{font-size:10px}.search-btn{margin-left:auto;padding:9px;font-size:0}.brand{min-width:0}.hero{grid-template-columns:1fr;padding:55px 0 75px}.hero h1{font-size:clamp(65px,17vw,100px)}.hero-art{height:340px;grid-row:1}.doom-mask{transform:scale(.82)}.o1{width:270px}.o2{width:330px}.o3{width:380px}.hero-copy{margin-top:8px}.alert{align-items:flex-start;flex-wrap:wrap}.alert>b{margin-left:43px}.block{padding-top:75px}.cards{grid-template-columns:1fr 1fr}.feature{min-height:215px;padding:18px}.feature h3{font-size:25px}.band-inner{grid-template-columns:1fr;gap:40px}.timeline-band{margin-top:70px;padding:65px 0}.closing{padding-bottom:75px}.page{padding-top:65px}.graph{grid-template-columns:1fr}.canvas{height:430px}.graph aside{border-left:0;border-top:1px solid #343532}.dossiers{grid-template-columns:1fr 1fr;gap:10px}.sigil{height:125px}.dossier-copy{padding:13px}.dossier-copy h3{font-size:22px}.dossier-copy p{min-height:90px}.theory{grid-template-columns:1fr}.theory aside{position:static}.clue-list article>button{grid-template-columns:55px 1fr 18px;gap:10px}.clue-list article em{display:none}.clue-list article b{font-size:20px}.clue-detail{padding-left:65px}.chronology article{grid-template-columns:85px 18px 1fr;gap:12px}.chronology h3{font-size:25px}.chronology time{font-size:8px}.reading article{grid-template-columns:32px 1fr 25px;gap:10px}.modal{padding:27px 22px}.modal h2{font-size:39px}footer>div{flex-direction:column}}
 @media(max-width:420px){.cards{grid-template-columns:1fr}.feature{min-height:190px}.hero-art{height:300px}.actions .btn{width:100%}.dossiers{grid-template-columns:1fr}.sigil{height:150px}.dossier-copy p{min-height:0}.years>div{grid-template-columns:90px 8px 1fr 18px;gap:8px}.years b{font-size:9px}}
+
+/* TRUE BELIEVER PASS — comic-book colour, character emblems and warmer fan language */
+:root{--red:#b21f2d;--red2:#f04442;--gold:#f2c45e;--muted:#b8b2a7}
+body{background:radial-gradient(ellipse at 78% 7%,#9b172d35,transparent 36%),radial-gradient(ellipse at 12% 40%,#1c4f8130,transparent 32%),#08090d}
+.topline{color:#aaa5a0}.signal{color:#f2c45e}
+.brand b{color:#f3d06c}.brand i{color:#f0c25c}
+.nav a{font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:.09em}
+.nav a.active{color:#ffd46e}
+.search-btn{border-color:#6b3037;border-radius:3px}
+.hero{min-height:700px}
+.hero-copy{position:relative;z-index:2}
+.hero h1{font-weight:700;text-shadow:3px 3px 0 #8f182c40}
+.hero h1 em{color:#f2c45e;text-shadow:3px 3px 0 #7d202b}
+.hero-art{background:radial-gradient(ellipse at center,#c02d3628,transparent 60%);border-radius:50%;isolation:isolate}
+.hero-art:before{content:'MARVEL';position:absolute;z-index:-1;font:900 clamp(90px,15vw,190px)/1 Impact,sans-serif;letter-spacing:-.06em;color:#ffffff08;transform:rotate(-90deg);white-space:nowrap}
+.orbit{border-style:dashed;border-color:#e5b95845}
+.o1{border-color:#ef44445c}
+.doom-mask{filter:drop-shadow(0 0 30px #f03a3a55)}
+.crown{background:linear-gradient(135deg,#f3d37d,#747a6a 45%,#d2b777)}
+.face{background:linear-gradient(100deg,#46574a,#d4c7a3 42%,#69715c 70%,#202b24)}
+.face i{background:#1b1716;box-shadow:0 0 15px #ff453c}
+.hero-art>small,.hero-art>label{color:#f1c76b}
+.alert{border-color:#6c343b;background:linear-gradient(90deg,#92202b40,#12141c)}
+.alert>svg{color:#f2c45e}
+.alert>b{color:#f3ce70;border-color:#8e6538}
+.head>small,.eyebrow{color:#f0bd63}
+.head>small:before,.eyebrow:before{background:#e83d45}
+.feature{background:linear-gradient(145deg,#172238aa,#141318 62%);border-color:#3c3c48}
+.feature:hover{background:linear-gradient(145deg,#7d1d2d66,#172238)}
+.feature>small{color:#f2c45e}
+.feature h3{font-size:31px}
+.feature>b{color:#f2c45e}
+.timeline-band{background:radial-gradient(ellipse at 15% 50%,#9a1e2e44,transparent 48%),linear-gradient(90deg,#121b2c,#111015);border-color:#4d2d3b}
+.band-inner a{color:#f3c965}
+.years i{background:#f0c45c;box-shadow:0 0 12px #f0c45c}
+.years span{color:#f0c45c}
+.btn{border-radius:3px;font-weight:700}
+.btn.red{background:linear-gradient(120deg,#a3162c,#e33a3b);border-color:#e33a3b;box-shadow:0 7px 24px #a3162c35}
+.filters button{border-radius:20px;font-family:'DM Sans',sans-serif;font-weight:700}
+.filters button.active,.filters button:hover{background:#a51d2d;color:#fff;border-color:#e04448}
+.dossiers{gap:18px}
+.dossier{border-color:#41404a;background:#10131b}
+.dossier:hover{border-color:#f0bf57;box-shadow:0 14px 36px #0008}
+.sigil{height:205px;overflow:hidden;background:radial-gradient(circle at 50% 55%,#c11d2c55,transparent 48%),linear-gradient(145deg,#192943,#0b0d14)}
+.sigil:before{content:'';position:absolute;inset:0;background:radial-gradient(#ffffff18 1px,transparent 1px);background-size:9px 9px;opacity:.35}
+.sigil:after{background:linear-gradient(135deg,transparent 35%,#ffffff0a 50%,transparent 65%)}
+.sigil small{z-index:2;color:#f1ce80}
+.sigil i{z-index:2;color:#f3c866}
+.hero-emblem{position:relative;z-index:1;display:grid;place-items:center;width:116px;height:116px;border:2px solid #f4c65f;border-radius:50%;font:900 66px/1 Georgia,serif;color:#fff;text-shadow:0 4px 15px #000;box-shadow:0 0 0 8px #ffffff0a,0 0 34px #e13c4455;background:radial-gradient(circle,#ffffff20,#0008)}
+.emblem-doom{color:#d6d5c7;background:radial-gradient(circle,#76816b,#111)}
+.emblem-strange{color:#f2c45e;background:radial-gradient(circle,#53228c,#151020)}
+.emblem-loki{color:#b8e2a4;background:radial-gradient(circle,#31583b,#101710)}
+.emblem-wanda{color:#ff9caa;background:radial-gradient(circle,#8d172f,#210b18)}
+.emblem-fantastic{font:900 76px Impact,sans-serif;color:#fff;background:radial-gradient(circle,#2767b8,#0c1d3c);border-color:#8ec5ff}
+.emblem-avengers{font:900 72px Impact,sans-serif;color:#fff;background:radial-gradient(circle,#a51d2d,#260d17);border-color:#f0c45c}
+.emblem-spider{font-size:66px;color:#f54a4a;background:radial-gradient(circle,#1b3b66,#090d16);border-color:#e83b46}
+.emblem-ironman{font-size:72px;color:#f4c45d;background:radial-gradient(circle,#9c2724,#211014);border-color:#f2c45e}
+.emblem-captain{font-size:66px;color:#fff;background:radial-gradient(circle,#285ca1,#111b34);border-color:#f3c65d}
+.emblem-thor{font-size:66px;color:#f2d48a;background:radial-gradient(circle,#385b83,#111824);border-color:#b6d4ef}
+.emblem-incursions,.emblem-multiverse{color:#8ed6ff;background:radial-gradient(circle,#2d4187,#0c1021)}
+.emblem-secret{color:#f4d07a;background:radial-gradient(circle,#6f1f2a,#180b12)}
+.emblem-kang{color:#8dd8d2;background:radial-gradient(circle,#185b61,#0c171a)}
+.dossier-copy h3{font-size:28px}
+.dossier-copy label{color:#f0c45e}
+.dossier-copy strong{color:#f0c45e}
+.graph{border-color:#3d3d4a;background:#0e111a}
+.graph aside{background:#121722}
+.react-flow__node{border-radius:18px;background:#18263c;border-color:#e2b85b;font-family:'DM Sans',sans-serif;font-weight:700}
+.react-flow__node.picked{background:#8e1c2d;border-color:#ffcf68}
+.reading-banner{background:linear-gradient(100deg,#8e1d2d44,#14233c);border-color:#705044}
+.reading-banner>svg,.reading article>svg{color:#f1c55f}
+.clue-list article>button:hover{background:#172239}
+.clue-list article>button b{font-size:26px}
+.theory>section,.theory>aside{background:linear-gradient(145deg,#172238,#101116);border-color:#41404a}
+.option.selected{background:#8d1e2b55}
+.warning{border-color:#85523d}
+footer>b{font-family:Impact,sans-serif;letter-spacing:.06em}
+@media(max-width:760px){.hero{min-height:0}.hero-art:before{font-size:110px}.sigil{height:165px}.hero-emblem{width:98px;height:98px}.hero h1{font-size:clamp(57px,15vw,90px)}}
