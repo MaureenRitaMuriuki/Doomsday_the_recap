@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090a0b">
+  <meta name="description" content="An interactive Marvel archive tracing the stories, characters, clues and comic-book mythology on the road to Avengers: Doomsday.">
+  <title>DOOMSDAY: THE RECAP — The Multiverse Files</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="topline"><span>THE MULTIVERSE ARCHIVE</span><span class="topline-center">EARTH-616 // CLASSIFIED ACCESS</span><span class="live-dot">FIELD NOTES UPDATED</span></div>
+  <header class="site-header">
+    <a class="brand" href="#briefing" aria-label="Doomsday the Recap home"><span class="brand-mark">D<span>:</span></span><span class="brand-name">DOOMSDAY <i>THE RECAP</i></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="mainNav" aria-label="Main navigation">
+      <a href="#briefing" data-route="briefing">BRIEFING</a>
+      <a href="#timeline" data-route="timeline">TIMELINE</a>
+      <a href="#connections" data-route="connections">CONNECTIONS</a>
+      <a href="#dossiers" data-route="dossiers">DOSSIERS</a>
+      <a href="#archives" data-route="archives">COMIC ARCHIVE</a>
+      <a href="#theory" data-route="theory">THEORY ROOM</a>
+    </nav>
+    <button class="search-trigger" id="searchTrigger" aria-label="Search archive">⌕ <span>SEARCH</span></button>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="site-footer">
+    <div class="footer-brand">DOOMSDAY<span>:</span> THE RECAP</div>
+    <p>An independent fan-made field guide to the Marvel stories leading toward Doomsday. Not affiliated with Marvel or Disney.</p>
+    <div class="footer-bottom"><span>EARTH-616 // END OF TRANSMISSION</span><span>BUILT FOR THE CURIOUS & THE COMIC-OBSESSED</span></div>
+  </footer>
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div id="modalContent"></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
