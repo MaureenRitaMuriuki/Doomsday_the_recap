@@ -1,38 +1,27 @@
 # DOOMSDAY: THE RECAP
 
-**The Multiverse Files** — an independent, fan-made interactive field guide exploring Marvel stories, characters, comic-book history and screen clues on the road to *Avengers: Doomsday*.
+An independent fan-made Marvel field guide tracing the characters, screen stories, comic-book mythology and clues on the road to *Avengers: Doomsday*.
 
-## Experience
-- Cinematic, responsive archive aesthetic in Doomsday-inspired charcoal, oxidised red, metallic green and antique gold.
-- Briefing homepage and guided narrative timeline.
-- Clickable character / concept connection map.
-- Character dossiers with comic and screen context.
-- Curated comic reading files.
-- Interactive fan-theory builder with clear speculation labels.
-- Search across the archive and locally saved exploration progress.
+## Technology
+React 19 · TypeScript · Vite · React Router · Framer Motion · @xyflow/react · Tailwind CSS · Lucide · GitHub Actions.
 
 ## Run locally
-Open `index.html` in a browser. No build step or dependencies are required.
+```bash
+npm install
+npm run dev
+npm run build
+```
 
-## Publish with GitHub Pages
-1. Open **Settings → Pages** in this repository.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select `main` and `/ (root)`, then Save.
-4. GitHub Pages will publish the site at the repository's Pages URL.
+## Deployment
+Enable **Settings → Pages → Build and deployment → GitHub Actions**. The workflow builds Vite and publishes `dist` on pushes to main.
 
-## Editorial standard
-Every entry should distinguish:
-- **Confirmed** — officially announced or shown on screen.
-- **Comic context** — information from published Marvel comics.
-- **Theory** — our interpretation of possible connections.
-- **Unconfirmed** — rumours that have not been established.
+## Editorial labels
+- **ON-SCREEN CANON** — established in released film or series.
+- **OFFICIAL** — officially announced by Marvel Studios.
+- **COMIC CONTEXT** — published comic-book material.
+- **THEORY** — editorial interpretation, never a confirmed spoiler.
 
-The comic stories are source material and inspiration, not guaranteed movie spoilers. Keep dates, cast and plot details updated against official Marvel / Disney sources.
-
-## Sources to start with
-- [Marvel Studios — Avengers: Doomsday](https://movies.disney.com/avengers-doomsday)
-- [Marvel — The Official Guide to Secret Wars](https://www.marvel.com/articles/comics/secret-wars-official-marvel-guide)
-- [Marvel — Secret Wars reading guide](https://www.marvel.com/comics/guides/508/secret-wars)
+Comic stories are context, not guaranteed film adaptations. Verify release dates and announcements against official Marvel / Disney sources.
 
 ## Disclaimer
-This is an unofficial fan project. Marvel, its characters, films, television series, comics, logos and related marks belong to their respective rights holders. This project is not affiliated with, endorsed by, or sponsored by Marvel or Disney. Character references are editorial commentary. Use licensed or permissioned artwork when adding film stills, posters or comic covers.
+Unofficial fan project, not affiliated with Marvel or Disney. Marvel intellectual property belongs to its respective rights holders. Use film stills, posters and comic covers only from licensed or permissioned sources.
