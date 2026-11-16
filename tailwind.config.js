@@ -1,0 +1,1 @@
+export default { content: ['./index.html', './src/**/*.{ts,tsx}'], theme: { extend: { colors: { void: '#090a0b', blood: '#a52b2d', brass: '#b89a68', verdigris: '#667b62' }, fontFamily: { display: ['Cormorant Garamond', 'serif'], sans: ['DM Sans', 'sans-serif'], mono: ['DM Mono', 'monospace'] } } }, plugins: [] }
